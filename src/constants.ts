@@ -4,22 +4,22 @@ export const projects = [
   {
     title: "Toronto Rollerblade Collective",
     category: "Community",
-    cover: "../src/assets/images/rollerblade.jpg",
+    cover: "../assets/images/rollerblade.jpg",
   },
   {
     title: "Hike.io Branding",
     category: "Fashion",
-    cover: "../src/assets/images/hike.jpg",
+    cover: "../assets/images/hike.jpg",
   },
   {
     title: "Codebase TO",
     category: "Tech",
-    cover: "../src/assets/images/codebase.jpg",
+    cover: "../assets/images/codebase.jpg",
   },
   {
     title: "Cryptonorth Coin",
     category: "Web3",
-    cover: "../src/assets/images/crypto.jpg",
+    cover: "../assets/images/crypto.jpg",
   },
 ];
 
