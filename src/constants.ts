@@ -1,25 +1,29 @@
 import movember from "./assets/images/movember.jpg";
+import rollerblade from "./assets/images/rollerblade.jpg";
+import hike from "./assets/images/hike.jpg";
+import codebase from "./assets/images/codebase.jpg";
+import crypto from "./assets/images/crypto.jpg";
 
 export const projects = [
   {
     title: "Toronto Rollerblade Collective",
     category: "Community",
-    cover: "../assets/images/rollerblade.jpg",
+    cover: rollerblade,
   },
   {
     title: "Hike.io Branding",
     category: "Fashion",
-    cover: "../assets/images/hike.jpg",
+    cover: hike,
   },
   {
     title: "Codebase TO",
     category: "Tech",
-    cover: "../assets/images/codebase.jpg",
+    cover: codebase,
   },
   {
     title: "Cryptonorth Coin",
     category: "Web3",
-    cover: "../assets/images/crypto.jpg",
+    cover: crypto,
   },
 ];
 
