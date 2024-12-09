@@ -1,4 +1,3 @@
-import scribble from "../../assets/images/scribble_2.png";
 import { ScribbleOne } from "../ui/vector-animations/scribble-one";
 import { VideoTypesAccordion } from "./video-types-accordion";
 
