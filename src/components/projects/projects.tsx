@@ -1,5 +1,4 @@
 import { projects } from "../../constants";
-import { cn } from "../../lib/utils";
 import { ProjectCard } from "./project-card";
 
 import { motion } from "motion/react";
@@ -25,9 +24,7 @@ export const Projects = () => {
             whileInView={{ x: 0, y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className={cn(
-              index === 1 || index === 2 ? "w-[32%]" : "w-[63%] 2xl:w-[65%]"
-            )}
+            className="w-[48%]"
           >
             <ProjectCard
               title={project.title}
@@ -37,7 +34,6 @@ export const Projects = () => {
           </motion.div>
         ))}
       </div>
-      <div className="w-[25%] h-[380px] absolute left-[7%] bottom-10 bg-white/10 backdrop-blur-sm" />
     </section>
   );
 };

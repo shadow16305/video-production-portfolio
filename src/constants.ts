@@ -3,6 +3,7 @@ import rollerblade from "./assets/images/rollerblade.jpg";
 import hike from "./assets/images/hike.jpg";
 import codebase from "./assets/images/codebase.jpg";
 import crypto from "./assets/images/crypto.jpg";
+import placeholder from "./assets/images/presentation.jpg";
 
 export const projects = [
   {
@@ -33,30 +34,45 @@ export const accordionItems = [
     paragraph:
       "We tailor our videos to your business to create visual stories. Whether you want to win new customers, attract top talent or build enduring connections, we can help guide you through the entire production process",
     categories: ["Shooting", "Editing", "Location Provided"],
+    videoSrc:
+      "https://player.vimeo.com/video/1035594082?h=49eafaab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    cover: placeholder,
   },
   {
     trigger: "About Us Video",
     paragraph:
       "We tailor our videos to your business to create visual stories. Whether you want to win new customers, attract top talent or build enduring connections, we can help guide you through the entire production process",
     categories: ["Shooting", "Editing", "Location Provided"],
+    videoSrc:
+      "https://player.vimeo.com/video/1035594082?h=49eafaab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    cover: placeholder,
   },
   {
     trigger: "Informational Content",
     paragraph:
       "We tailor our videos to your business to create visual stories. Whether you want to win new customers, attract top talent or build enduring connections, we can help guide you through the entire production process",
     categories: ["Shooting", "Editing", "Location Provided"],
+    videoSrc:
+      "https://player.vimeo.com/video/1035594082?h=49eafaab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    cover: placeholder,
   },
   {
     trigger: "Events",
     paragraph:
       "We tailor our videos to your business to create visual stories. Whether you want to win new customers, attract top talent or build enduring connections, we can help guide you through the entire production process",
     categories: ["Shooting", "Editing", "Location Provided"],
+    videoSrc:
+      "https://player.vimeo.com/video/1035594082?h=49eafaab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    cover: placeholder,
   },
   {
     trigger: "Podcasts",
     paragraph:
       "We tailor our videos to your business to create visual stories. Whether you want to win new customers, attract top talent or build enduring connections, we can help guide you through the entire production process",
     categories: ["Shooting", "Editing", "Location Provided"],
+    videoSrc:
+      "https://player.vimeo.com/video/1035594082?h=49eafaab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    cover: placeholder,
   },
 ];
 
@@ -127,6 +143,36 @@ export const gearItems = [
       "DJI SDR Video Transmission System",
       "Atomos Shinobi 5” Monitor",
       null,
+      null,
+    ],
+  },
+];
+
+export const ratesItems = [
+  {
+    category: "Cameras",
+    items: [
+      "Lorem ipsum dolor sit amet consectetur.",
+      "Lorem ipsum dolor sit amet consectetur.",
+      null,
+      null,
+    ],
+  },
+  {
+    category: "Lenses",
+    items: [
+      "Fuijinon MK Super 35 Zoom Lneses (18-55 & 50-135)",
+      "DZO Film Vespid Prime Lenses (21, 35, 50)",
+      "Sony G Super 35 Zoom Lens (16-55)",
+      "Polar Pro Chroma VND/PL Filters (2-5 & 6-9)",
+    ],
+  },
+  {
+    category: "Tripods/Gimbal ",
+    items: [
+      "Sachtler Aktiv8 Flowtech75 Tripod",
+      "Peak Design Travel Tripod",
+      "DJI RS2 Pro Gimbal",
       null,
     ],
   },

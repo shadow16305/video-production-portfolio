@@ -29,21 +29,19 @@ export const PresentationVideo = ({
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1 }}
+      onClick={() => setShowVideo(true)}
     >
       <img
         src={presentation}
         alt="preview video thumbnail"
-        className="w-full h-[390px]"
+        className="w-full h-[390px] object-cover"
       />
       <img
         src={play}
         alt="play video"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:invert transitioan-all duration-300 z-10"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10"
       />
-      <div
-        onClick={() => setShowVideo(true)}
-        className="size-full bg-black absolute top-0 left-0 opacity-0 group-hover:opacity-50 transition-all duration-300"
-      />
+      <div className="size-full bg-black absolute top-0 left-0 opacity-30" />
     </motion.div>
   );
 };

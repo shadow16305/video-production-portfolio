@@ -39,20 +39,23 @@ export const VideoTypesAccordion = () => {
             <AccordionTrigger
               onClick={() => handleValChange(item.trigger)}
               className={cn(
-                "bg-slate-200 font-['Syne'] font-bold text-[3.125rem] px-20 hover:bg-black hover:text-white transition-colors duration-300 group underline-offset-8",
-                item.trigger === itemVal && "bg-lime-200 underline"
+                "bg-slate-200 font-['Syne'] font-bold text-xl lg:text-[3.125rem] px-4 lg:px-20 text-slate-600 hover:bg-black hover:text-white transition-colors duration-300 group underline-offset-8",
+                item.trigger === itemVal && "bg-lime-200 underline text-black"
               )}
             >
-              <div className="flex items-center gap-x-8">
+              <div className="flex items-center gap-x-4 lg:gap-x-8 text-start py-4">
                 {item.trigger}{" "}
                 <img
                   src={bomb}
                   alt="bomb icon"
-                  className="size-8 group-hover:invert transition-all duration-300"
+                  className={cn(
+                    "size-6 lg:size-8 group-hover:invert transition-all duration-300 opacity-70",
+                    item.trigger === itemVal && "opacity-100"
+                  )}
                 />
               </div>
             </AccordionTrigger>
-            <AccordionContent className="flex justify-between px-20 py-8 bg-lime-200 font-['Montserrat']">
+            <AccordionContent className="flex justify-between px-20 pt-4 pb-8 bg-lime-200 font-['Montserrat']">
               <div className="w-[38%] flex flex-col justify-between">
                 <p>{item.paragraph}</p>
                 <Separator className="bg-black" />
@@ -62,7 +65,7 @@ export const VideoTypesAccordion = () => {
                   ))}
                 </ul>
               </div>
-              <Video />
+              <Video videoSrc={item.videoSrc} cover={item.cover} />
             </AccordionContent>
           </AccordionItem>
         </motion.div>

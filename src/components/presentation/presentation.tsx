@@ -27,11 +27,11 @@ export const Presentation = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="flex w-10/12 mx-auto items-center justify-between gap-x-20 relative mt-32">
-      <div className="relative w-1/2 group cursor-pointer">
+    <section className="flex flex-col lg:flex-row w-10/12 mx-auto items-center justify-between gap-x-20 gap-y-8 relative mt-32">
+      <div className="relative lg:w-1/2 group cursor-pointer">
         <PresentationVideo showVideo={showVideo} setShowVideo={setShowVideo} />
       </div>
-      <div className="space-y-6 font-['Syne'] font-bold w-1/2 z-10">
+      <div className="space-y-6 font-['Syne'] font-bold lg:w-1/2 z-10">
         <div className="flex flex-wrap">
           {splittedText.map((current, i) => (
             <motion.h2
@@ -41,7 +41,7 @@ export const Presentation = () => {
               initial="initial"
               animate={isInView ? "animate" : ""}
               custom={i}
-              className="text-[3.125rem] leading-[116%] pr-2"
+              className="text-3xl lg:text-[3.125rem] leading-[116%] pr-2"
             >
               {current == "" ? <span>&nbsp;</span> : current}
             </motion.h2>
@@ -67,7 +67,7 @@ export const Presentation = () => {
       <img
         src={scribble}
         alt="scribble"
-        className="absolute -top-10 -right-24 w-36 h-[132px]"
+        className="absolute -top-4 2xl:top-0 -right-16 w-36 h-[132px] hidden lg:block"
       />
     </section>
   );

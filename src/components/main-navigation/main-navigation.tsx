@@ -11,7 +11,7 @@ export const MainNavigation = () => {
         height={51}
         className="pl-8"
       />
-      <ul className="flex items-center gap-x-20 font-['Syne'] font-semibold text-sm text-white">
+      <ul className="items-center gap-x-20 font-['Syne'] font-semibold text-sm text-white hidden lg:flex">
         <li className="group relative">
           <a
             href="#projects"
@@ -42,7 +42,7 @@ export const MainNavigation = () => {
       </ul>
       <a
         href="#contact"
-        className="px-12 py-9 flex items-center gap-x-4 font-['Syne'] font-semibold text-sm text-white bg-white/10 hover:bg-white/15 transition backdrop-blur-md"
+        className="px-12 py-9 items-center gap-x-4 font-['Syne'] font-semibold text-sm text-white bg-white/10 hover:bg-white/15 transition backdrop-blur-md hidden lg:flex"
       >
         CONTACT <img src={chat_bubble} alt="contact button" />
       </a>
