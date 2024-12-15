@@ -7,13 +7,13 @@ export const Rates = () => {
   const [activeItem, setActiveItem] = useState<string>("Rates");
 
   return (
-    <section className="w-10/12 mx-auto mt-32" id="rates">
+    <section className="w-10/12 mx-auto mt-16 lg:mt-32" id="rates">
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-[3.125rem] leading-[116%] text-center font-['Syne'] font-bold flex gap-x-4 justify-center relative"
+        className="text-3xl lg:text-[3.125rem] leading-[116%] lg:text-center font-['Syne'] font-bold flex gap-x-4 lg:justify-center relative"
       >
         <button
           type="button"
@@ -54,7 +54,7 @@ export const Rates = () => {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-center text-4xl font-['Syne'] mt-4"
+        className="lg:text-center text-2xl lg:text-4xl font-['Syne'] mt-4"
       >
         Interested in a retainer deal? Call me now to discuss!
       </motion.h3>

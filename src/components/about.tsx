@@ -12,7 +12,7 @@ export const About = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-[3.125rem] leading-[116%] text-center font-['Syne'] font-bold"
+        className="text-3xl lg:text-[3.125rem] leading-[116%] text-center font-['Syne'] font-bold"
       >
         About <span className="text-lime-200">me</span>
       </motion.h2>
@@ -21,7 +21,7 @@ export const About = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="max-w-[650px] text-center mt-12 text-neutral-300 font-['Montserrat']"
+        className="w-11/12 lg:w-full lg:max-w-[650px] text-center mt-8 lg:mt-12 text-neutral-300 font-['Montserrat']"
       >
         With 10 years of experience in cinematography and editing, I've worked
         on everything from freelance gigs to award-winning shorts. I thrive in
@@ -35,7 +35,7 @@ export const About = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="w-[270px] h-[330px] mt-12 ml-8"
+        className="w-[270px] h-[330px] mt-8 lg:mt-12 ml-8"
       />
       <motion.span
         initial={{ opacity: 0 }}

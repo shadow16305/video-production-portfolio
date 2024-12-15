@@ -9,7 +9,7 @@ import { carouselItems } from "@/constants";
 
 export const ReviewCarousel = () => {
   return (
-    <Carousel orientation="vertical" className="flex items-center">
+    <Carousel orientation="vertical" className="lg:flex items-center hidden">
       <div className="space-y-12 relative">
         <CarouselPrevious className="size-16 border-black border-2 z-10 bg-transparent hover:bg-neutral-200/40" />
         <CarouselNext className="size-16 border-black border-2 bg-transparent hover:bg-neutral-200/40" />

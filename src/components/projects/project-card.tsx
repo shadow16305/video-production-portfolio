@@ -6,15 +6,9 @@ interface ProjectCardProps {
   title: string;
   category: string;
   cover: string;
-  titleClass?: string;
 }
 
-export const ProjectCard = ({
-  title,
-  category,
-  cover,
-  titleClass,
-}: ProjectCardProps) => {
+export const ProjectCard = ({ title, category, cover }: ProjectCardProps) => {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
@@ -32,7 +26,7 @@ export const ProjectCard = ({
         <>
           <h3
             className={
-              "font-['Syne'] font-bold text-[2.5rem] leading-[116%] text-white max-w-[440px] z-10 underline underline-offset-8 group-hover:text-lime-200 transition-colors duration-300"
+              "font-['Syne'] font-bold text-2xl lg:text-[2.5rem] leading-[116%] text-white max-w-[440px] z-10 underline underline-offset-8 group-hover:text-lime-200 transition-colors duration-300"
             }
           >
             {title}

@@ -37,16 +37,16 @@ export const Form = () => {
 
   return (
     <form
-      className="flex flex-col gap-y-4 w-5/12"
+      className="flex flex-col gap-y-4 lg:w-5/12 mt-12 lg:mt-0"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="flex justify-between w-full gap-x-4">
+      <div className="flex flex-col lg:flex-row lg:justify-between w-full gap-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="w-1/2"
+          className="w-full lg:w-1/2"
         >
           <Input
             type="text"
@@ -60,7 +60,7 @@ export const Form = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="w-1/2"
+          className="w-full lg:w-1/2"
         >
           <Input
             type="email"
@@ -115,7 +115,7 @@ export const Form = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="bg-white px-8 py-4 font-['Syne'] font-bold text-sm text-black w-fit ml-auto group relative flex items-center gap-x-2"
+        className="bg-white px-8 py-4 font-['Syne'] font-bold text-sm text-black w-full lg:w-fit ml-auto group relative flex items-center justify-center gap-x-2"
         disabled={loading}
       >
         <span className="z-10 relative">{loading ? "Sending..." : "SEND"}</span>

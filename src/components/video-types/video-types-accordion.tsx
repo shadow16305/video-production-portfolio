@@ -26,7 +26,11 @@ export const VideoTypesAccordion = () => {
   };
 
   return (
-    <Accordion type="single" collapsible className="mt-12 space-y-6">
+    <Accordion
+      type="single"
+      collapsible
+      className="mt-8 lg:mt-12 space-y-4 lg:space-y-6"
+    >
       {accordionItems.map((item) => (
         <motion.div
           key={item.trigger}
@@ -43,8 +47,10 @@ export const VideoTypesAccordion = () => {
                 item.trigger === itemVal && "bg-lime-200 underline text-black"
               )}
             >
-              <div className="flex items-center gap-x-4 lg:gap-x-8 text-start py-4">
-                {item.trigger}{" "}
+              <div className="flex items-center gap-x-4 lg:gap-x-8 text-start py-2 lg:py-4">
+                <span className="max-w-[170px] lg:max-w-none">
+                  {item.trigger}
+                </span>{" "}
                 <img
                   src={bomb}
                   alt="bomb icon"

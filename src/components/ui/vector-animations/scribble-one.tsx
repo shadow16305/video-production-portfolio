@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 export const ScribbleOne = () => {
   return (
     <svg
+      className="w-full h-[121px] lg:w-[609px] lg:h-[81px] object-cover"
       width="609"
       height="81"
       viewBox="0 0 609 81"

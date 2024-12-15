@@ -27,7 +27,7 @@ export const Presentation = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="flex flex-col lg:flex-row w-10/12 mx-auto items-center justify-between gap-x-20 gap-y-8 relative mt-32">
+    <section className="flex flex-col lg:flex-row w-10/12 mx-auto items-center justify-between gap-x-20 gap-y-8 relative mt-16 lg:mt-32">
       <div className="relative lg:w-1/2 group cursor-pointer">
         <PresentationVideo showVideo={showVideo} setShowVideo={setShowVideo} />
       </div>
