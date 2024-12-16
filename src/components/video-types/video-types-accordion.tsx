@@ -61,11 +61,11 @@ export const VideoTypesAccordion = () => {
                 />
               </div>
             </AccordionTrigger>
-            <AccordionContent className="flex justify-between px-20 pt-4 pb-8 bg-lime-200 font-['Montserrat']">
-              <div className="w-[38%] flex flex-col justify-between">
+            <AccordionContent className="flex flex-col lg:flex-row justify-between px-4 lg:px-20 pt-4 pb-8 bg-lime-200 font-['Montserrat']">
+              <div className="lg:w-[38%] flex flex-col justify-between">
                 <p>{item.paragraph}</p>
-                <Separator className="bg-black" />
-                <ul className="flex items-center gap-x-5 font-bold">
+                <Separator className="bg-black my-4 lg:my-0" />
+                <ul className="flex flex-col lg:flex-row lg:items-center gap-y-1 gap-x-5 font-bold mb-4">
                   {item.categories.map((category) => (
                     <li key={category}>{category}</li>
                   ))}

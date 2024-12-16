@@ -10,7 +10,7 @@ export const Video = ({ videoSrc, cover }: VideoProps) => {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <div className="relative w-1/3 group cursor-pointer">
+    <div className="relative lg:w-1/3 group cursor-pointer">
       {showVideo ? (
         <div className="h-[200px] w-full">
           <iframe

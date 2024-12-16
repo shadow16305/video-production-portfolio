@@ -7,7 +7,7 @@ export const Rates = () => {
   const [activeItem, setActiveItem] = useState<string>("Rates");
 
   return (
-    <section className="w-10/12 mx-auto mt-16 lg:mt-32" id="rates">
+    <section className="w-10/12 mx-auto mt-24 lg:mt-32" id="rates">
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
