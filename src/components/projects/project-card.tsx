@@ -13,7 +13,7 @@ export const ProjectCard = ({ title, category, cover }: ProjectCardProps) => {
 
   return (
     <div
-      className="relative pb-12 pl-6 bg-no-repeat bg-cover bg-center h-[380px] flex items-end group cursor-pointer w-full group"
+      className="relative pb-12 pl-6 bg-no-repeat bg-cover bg-center h-[312px] lg:h-[380px] flex items-end group cursor-pointer w-full group"
       onClick={() => setShowVideo(true)}
       style={{ backgroundImage: `url(${cover})` }}
     >
