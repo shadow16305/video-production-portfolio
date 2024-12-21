@@ -13,7 +13,7 @@ export const Rates = () => {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-3xl lg:text-[3.125rem] leading-[116%] lg:text-center font-['Syne'] font-bold flex gap-x-4 lg:justify-center relative"
+        className="text-3xl lg:text-[3.125rem] leading-[116%] lg:text-center font-['Syne'] font-bold flex gap-x-4 justify-center relative"
       >
         <button
           type="button"
@@ -54,7 +54,7 @@ export const Rates = () => {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="lg:text-center text-2xl lg:text-4xl font-['Syne'] mt-4"
+        className="text-center text-2xl lg:text-4xl font-['Syne'] mt-4"
       >
         Interested in a retainer deal? Call me now to discuss!
       </motion.h3>
