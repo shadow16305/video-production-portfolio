@@ -13,7 +13,7 @@ export const ProjectCard = ({ title, category, cover }: ProjectCardProps) => {
 
   return (
     <div
-      className="relative pb-12 pl-6 bg-no-repeat bg-cover bg-center h-[312px] lg:h-[380px] flex items-end group cursor-pointer w-full group"
+      className="relative pb-12 pl-6 bg-no-repeat bg-cover bg-center h-[184px] lg:h-[380px] flex items-end group cursor-pointer w-full group"
       onClick={() => setShowVideo(true)}
       style={{ backgroundImage: `url(${cover})` }}
     >
@@ -42,7 +42,7 @@ export const ProjectCard = ({ title, category, cover }: ProjectCardProps) => {
           />
         </>
       )}
-      <div className="w-11/12 h-[380px] absolute -left-4 -bottom-4 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+      <div className="w-full h-[380px] absolute -left-7 -bottom-7  backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 hidden lg:block saturate-200 brightness-200" />
     </div>
   );
 };

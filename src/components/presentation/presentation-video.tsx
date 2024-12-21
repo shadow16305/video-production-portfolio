@@ -13,7 +13,7 @@ export const PresentationVideo = ({
   setShowVideo,
 }: PresentationVideoProps) => {
   return showVideo ? (
-    <div className="lg:h-[390px] w-full">
+    <div className="h-[184px] lg:h-[390px] w-full">
       <iframe
         src="https://player.vimeo.com/video/1035594082?h=49eafaab97&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         frameBorder="0"
@@ -34,7 +34,7 @@ export const PresentationVideo = ({
       <img
         src={presentation}
         alt="preview video thumbnail"
-        className="w-full lg:h-[390px] object-cover"
+        className="w-full h-[184px] lg:h-[390px] object-cover"
       />
       <img
         src={play}
