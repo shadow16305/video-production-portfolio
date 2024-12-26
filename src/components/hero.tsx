@@ -24,7 +24,7 @@ export const Hero = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="bg-[url('../src/assets/images/hero-mobile.jpg')] lg:bg-[url('../src/assets/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-screen flex items-center relative">
+    <section className="bg-[url('../src/assets/images/hero-mobile.jpg')] lg:bg-[url('../src/assets/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-screen flex items-end lg:items-center relative pb-20 lg:pb-0">
       <div className="w-10/12 mx-auto text-white z-10 relative">
         <div className="flex flex-wrap justify-center lg:justify-start lg:max-w-[680px]">
           {splittedText.map((current, i) => (
@@ -73,7 +73,7 @@ export const Hero = () => {
         whileInView={{ skewX: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="absolute left-[40%] w-[660px] h-[400px] xl:w-[780px] xl:h-[500px] hidden lg:block"
+        className="absolute left-[5%] top-[20%] lg:left-[40%] w-11/12 h-[234px] lg:w-[660px] lg:h-[400px] xl:w-[780px] xl:h-[500px]"
       >
         <img
           src={hero_img}

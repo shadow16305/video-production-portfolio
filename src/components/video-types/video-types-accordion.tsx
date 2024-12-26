@@ -61,7 +61,7 @@ export const VideoTypesAccordion = () => {
                 />
               </div>
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col lg:flex-row justify-between px-4 lg:px-20 pt-4 pb-8 bg-lime-200 font-['Montserrat']">
+            <AccordionContent className="flex flex-col lg:flex-row justify-between px-4 lg:px-20 pt-4 lg:pt-8 pb-8 bg-lime-200 font-['Montserrat']">
               <div className="lg:w-[38%] flex flex-col justify-between">
                 <p>{item.paragraph}</p>
                 <Separator className="bg-black my-4 lg:my-0" />
