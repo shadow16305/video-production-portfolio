@@ -24,9 +24,9 @@ export const Hero = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="bg-[url('../src/assets/images/hero-mobile.jpg')] lg:bg-[url('../src/assets/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat h-screen flex items-end lg:items-center relative pb-20 lg:pb-0">
+    <section className="bg-[url('../src/assets/images/hero-mobile.jpg')] lg:bg-[url('../src/assets/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat pt-72 lg:pt-0 lg:h-screen flex items-end lg:items-center relative pb-20 lg:pb-0">
       <div className="w-10/12 mx-auto text-white z-10 relative">
-        <div className="flex flex-wrap justify-center lg:justify-start lg:max-w-[680px]">
+        <div className="flex flex-wrap justify-center lg:justify-start lg:max-w-[680px] z-10 relative">
           {splittedText.map((current, i) => (
             <motion.h1
               key={i}
@@ -49,7 +49,7 @@ export const Hero = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="font-['Montserrat'] text-base max-w-[465px] mt-4 text-center lg:text-start"
+          className="font-['Montserrat'] text-base max-w-[465px] mt-4 text-center lg:text-start z-10 relative"
         >
           Hey! My name is Ian. Take a look at some of my recent work bellow, and
           call if you'd like to connect or{" "}
@@ -67,13 +67,18 @@ export const Hero = () => {
           <img src={bomb} alt="call phone number" className="z-10" />
           <div className="w-0 h-full bg-lime-200 absolute top-0 left-0 transition-all group-hover:w-full duration-300" />
         </motion.a>
+        <img
+          src={hero_img}
+          alt="hero image"
+          className="object-cover absolute lg:hidden -top-1/2"
+        />
       </div>
       <motion.div
         initial={{ skewX: -3 }}
         whileInView={{ skewX: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="absolute left-[5%] top-[20%] lg:left-[40%] w-11/12 h-[234px] lg:w-[660px] lg:h-[400px] xl:w-[780px] xl:h-[500px]"
+        className="absolute lg:left-[40%] w-11/12 lg:w-[660px] lg:h-[400px] xl:w-[780px] xl:h-[500px] hidden lg:block"
       >
         <img
           src={hero_img}
