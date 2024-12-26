@@ -1,9 +1,25 @@
+import { useEffect, useState } from "react";
 import { projects } from "../../constants";
 import { ProjectCard } from "./project-card";
 
 import { motion } from "motion/react";
 
 export const Projects = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const updateIsDesktop = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    updateIsDesktop();
+    window.addEventListener("resize", updateIsDesktop);
+
+    return () => {
+      window.removeEventListener("resize", updateIsDesktop);
+    };
+  }, []);
+
   return (
     <section
       className="bg-[url('../src/assets/images/projects-bg.jpg')] bg-cover bg-center bg-no-repeat mt-16 lg:mt-32 py-16 relative"
@@ -17,8 +33,8 @@ export const Projects = () => {
           <motion.div
             key={index}
             initial={{
-              x: index === 0 ? -60 : index === 3 ? 60 : 0,
-              y: index === 1 ? -60 : index === 2 ? 60 : 0,
+              x: isDesktop ? (index === 0 ? -60 : index === 3 ? 60 : 0) : -60,
+              y: isDesktop ? (index === 1 ? -60 : index === 2 ? 60 : 0) : 0,
               opacity: 0,
             }}
             whileInView={{ x: 0, y: 0, opacity: 1 }}
