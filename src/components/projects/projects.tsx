@@ -28,7 +28,7 @@ export const Projects = () => {
       <h2 className="text-[3.125rem] leading-[116%] underline text-lime-200 text-center font-['Syne']">
         Projects
       </h2>
-      <div className="flex flex-wrap w-10/12 mx-auto gap-9 mt-16 z-10 relative">
+      <div className="flex flex-wrap w-10/12 3xl:max-w-[1560px] mx-auto gap-9 mt-16 z-10 relative">
         {projects.map((project, index) => (
           <motion.div
             key={index}

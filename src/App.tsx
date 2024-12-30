@@ -5,7 +5,7 @@ import { Hero } from "./components/hero";
 import { MainNavigation } from "./components/main-navigation/main-navigation";
 import { Presentation } from "./components/presentation/presentation";
 import { Projects } from "./components/projects/projects";
-import { Rates } from "./components/rates/rates";
+import { Gear } from "./components/gear/gear";
 import { Reviews } from "./components/reviews/reviews";
 import { VideoTypes } from "./components/video-types/video-types";
 import { Toaster } from "@/components/ui/sonner";
@@ -20,7 +20,7 @@ function App() {
       <VideoTypes />
       <About />
       <Reviews />
-      <Rates />
+      <Gear />
       <Footer />
       <Toaster />
     </main>

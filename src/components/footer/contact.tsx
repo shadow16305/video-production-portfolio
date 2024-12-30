@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 export const Contact = () => {
   return (
     <div
-      className="w-10/12 mx-auto flex flex-col lg:flex-row lg:justify-between text-white"
+      className="w-10/12 3xl:max-w-[1560px] mx-auto flex flex-col lg:flex-row lg:justify-between text-white"
       id="contact"
     >
       <div className="max-w-[454px] lg:w-5/12 font-['Syne'] font-bold">

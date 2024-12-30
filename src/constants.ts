@@ -147,33 +147,3 @@ export const gearItems = [
     ],
   },
 ];
-
-export const ratesItems = [
-  {
-    category: "Cameras",
-    items: [
-      "Lorem ipsum dolor sit amet consectetur.",
-      "Lorem ipsum dolor sit amet consectetur.",
-      null,
-      null,
-    ],
-  },
-  {
-    category: "Lenses",
-    items: [
-      "Fuijinon MK Super 35 Zoom Lneses (18-55 & 50-135)",
-      "DZO Film Vespid Prime Lenses (21, 35, 50)",
-      "Sony G Super 35 Zoom Lens (16-55)",
-      "Polar Pro Chroma VND/PL Filters (2-5 & 6-9)",
-    ],
-  },
-  {
-    category: "Tripods/Gimbal ",
-    items: [
-      "Sachtler Aktiv8 Flowtech75 Tripod",
-      "Peak Design Travel Tripod",
-      "DJI RS2 Pro Gimbal",
-      null,
-    ],
-  },
-];

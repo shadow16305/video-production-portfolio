@@ -7,7 +7,7 @@ import { CarouselMobile } from "./carousel-mobile";
 export const Reviews = () => {
   return (
     <section className="mt-24 lg:mt-32 relative">
-      <div className="w-10/12 mx-auto flex justify-between">
+      <div className="w-10/12 3xl:max-w-[1560px] mx-auto flex justify-between">
         <div className="flex flex-col justify-between lg:w-1/2">
           <motion.h2
             initial={{ opacity: 0 }}
