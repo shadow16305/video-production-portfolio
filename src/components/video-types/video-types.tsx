@@ -7,7 +7,7 @@ export const VideoTypes = () => {
       <h2 className="text-3xl lg:text-[3.125rem] leading-[116%] text-center font-['Syne'] font-bold">
         Videos I Can Create For You
       </h2>
-      <div className="absolute left-1/2 -translate-x-1/2 -top-4 lg:-top-6 w-full">
+      <div className="absolute left-1/2 -translate-x-1/2 -top-4 md:-top-14 lg:-top-6 w-full">
         <ScribbleOne />
       </div>
       <VideoTypesAccordion />

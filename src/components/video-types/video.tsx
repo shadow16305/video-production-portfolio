@@ -12,7 +12,7 @@ export const Video = ({ videoSrc, cover }: VideoProps) => {
   return (
     <div className="relative z-20 lg:w-1/3 group cursor-pointer">
       {showVideo ? (
-        <div className="h-[184px] lg:h-[200px] w-full">
+        <div className="aspect-video w-full">
           <iframe
             src={videoSrc}
             frameBorder="0"
@@ -27,7 +27,7 @@ export const Video = ({ videoSrc, cover }: VideoProps) => {
           <img
             src={cover}
             alt="preview video thumbnail"
-            className="w-full h-[184px] lg:h-[200px] object-cover"
+            className="w-full object-cover aspect-video"
           />
           <img
             src={play}

@@ -25,7 +25,7 @@ export const Hero = () => {
 
   return (
     <section className="bg-[url('../src/assets/images/hero-mobile.jpg')] lg:bg-[url('../src/assets/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat pt-72 lg:pt-0 lg:h-screen flex items-end lg:items-center relative pb-20 lg:pb-0">
-      <div className="w-10/12 3xl:max-w-[1560px] mx-auto text-white z-10 relative">
+      <div className="w-10/12 3xl:max-w-[1560px] mx-auto text-white z-10 relative flex flex-col items-center lg:items-start">
         <div className="flex flex-wrap justify-center lg:justify-start lg:max-w-[680px] z-10 relative">
           {splittedText.map((current, i) => (
             <motion.h1
@@ -69,11 +69,9 @@ export const Hero = () => {
           <img src={bomb} alt="call phone number" className="z-10" />
           <div className="w-0 h-full bg-lime-200 absolute top-0 left-0 transition-all group-hover:w-full duration-300" />
         </motion.a>
-        <img
-          src={hero_img}
-          alt="hero image"
-          className="object-cover absolute lg:hidden -top-1/2"
-        />
+        <div className="absolute lg:hidden -top-1/2 md:-top-2/3 md:w-[420px] -z-10">
+          <img src={hero_img} alt="hero image" className="object-cover" />
+        </div>
       </div>
       <motion.div
         initial={{ skewX: -3 }}
