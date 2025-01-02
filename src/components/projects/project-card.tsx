@@ -20,7 +20,6 @@ export const ProjectCard = ({ title, category, cover }: ProjectCardProps) => {
       {showVideo ? (
         <>
           <ProjectVideo />
-          <div className="absolute top-0 left-0 size-full bg-black/40 backdrop-blur-md" />
         </>
       ) : (
         <>
@@ -34,7 +33,7 @@ export const ProjectCard = ({ title, category, cover }: ProjectCardProps) => {
           <span className="bg-white/30 backdrop-blur-sm rounded-3xl px-6 py-2 absolute right-4 top-4 z-10 text-white font-['Montserrat'] text-sm">
             {category}
           </span>
-          <div className="absolute top-0 left-0 size-full bg-black/30" />
+          <div className="absolute top-0 left-0 size-full bg-black/30 group-hover:opacity-0 transition-opacity" />
           <img
             src={play}
             alt="play icon"
@@ -42,7 +41,7 @@ export const ProjectCard = ({ title, category, cover }: ProjectCardProps) => {
           />
         </>
       )}
-      <div className="w-full h-[380px] absolute -left-7 -bottom-7  backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 hidden lg:block saturate-200 brightness-200" />
+      <div className="w-full h-[380px] absolute -left-7 -bottom-7 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 hidden lg:block saturate-200 brightness-200" />
     </div>
   );
 };
